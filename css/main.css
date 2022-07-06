@@ -1,0 +1,36 @@
+/* Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com */
+
+
+.background {
+  background-image: url('../images/main-cover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.start-btn {
+  background-color: rgb(225 29 72);
+  color: white;
+  font-size: 22px;
+  width: auto;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 15%;
+  padding: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,116 @@
+<!-- Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/Place-Selection.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" rel="stylesheet">
+  <title>Place Selection</title>
+</head>
+
+<body class="background-Sel">
+
+  <div class="main-container">
+
+    <div class="flex flex-row items-center gap-x-8 profile-contaner">
+      <img src="../images/profile.png" class="w-20">
+      <div class="flex flex-col">
+        <h3 class="text-base h3 sm:text-sm sm:text-red">Welcome Home &nbsp;<i class="bi bi-stars"></i></h3>
+        <h2 class="text-4xl h2">Uthman Saleh</h2>
+      </div>
+      <img src="../images/bell (1).png">
+    </div>
+
+    <div class="justify-center content-center search-container">
+      <form>
+        <label for="default-search"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+        <div class="relative search-bar-container">
+          <input type="search" id="default-search"
+            class="block p-4 pl-10 w-44 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
+            placeholder="Where to go...">
+          <button type="submit"
+            class="text-white relative right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 py-2 mt-4"><img
+              src="../images/search.png"></button>
+        </div>
+      </form>
+    </div>
+
+    <div class="flex flex-col img-card-categ-container">
+      <h2 class="h2 text-2xl">Popular Categories</h2>
+      <div class="flex flex-row mt-4">
+        <div class="cat-container">
+          <img id="springImg" src="../images/spring1.jpg" class="img-card-categ">
+          <h5 id="springName" class="card-text-categ" style="font-family: Georgia;">Treehouse Vineyards</h5>
+        </div>
+        <div class="cat-container">
+          <img id="summerImg" src="../images/summer1.jpg" class="img-card-categ">
+          <h5 id="summerName" class="card-text-categ" style="font-family: Georgia;">Cosy<br/>Canvas</h5>
+        </div>
+        <div class="cat-container">
+          <img id="autumImg" src="../images/autum1.jpg" class="img-card-categ">
+          <h5 id="autumName" class="card-text-categ" style="font-family: Georgia;">Gapyeong Serapim</h5>
+        </div>
+        <div class="cat-container">
+          <img id="winterImg" src="../images/winter1.jpg" class="img-card-categ">
+          <h5 id="winterName" class="card-text-categ" style="font-family: Georgia;">Torassieppi Jerisjärvi</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col mt-6 recommended-cotainer">
+      <h2 class="h2 text-2xl">Recommended</h2>
+      <div class="flex flex-row option-cards-container mt-6">
+
+        <figure id="spring" class="card">
+          <a href="./Place-Description.html">
+            <img src="../images/spring1.jpg" class="card-img">
+            <figcaption class="card-text">Treehouse Vineyards</figcaption>
+          </a>
+        </figure>
+        <figure id="summer" class="card">
+          <a href="./Place-Description.html">
+            <img src="../images/summer1.jpg" class="card-img">
+            <figcaption class="card-text">Cosy<br/>Canvas</figcaption>
+          </a>
+        </figure>
+        <figure id="autum" class="card">
+          <a href="./Place-Description.html">
+            <img src="../images/autum1.jpg" class="card-img">
+            <figcaption class="card-text">Gapyeong Serapim</figcaption>
+          </a>
+        </figure>
+        <figure id="winter" class="card">
+          <a href="./Place-Description.html">
+            <img src="../images/winter1.jpg" class="card-img">
+            <figcaption class="card-text">Torassieppi Jerisjärvi</figcaption>
+          </a>
+        </figure>
+
+      </div>
+    </div>
+
+    <footer class="footer-container">
+      <ul class="voltear">
+        <li class="footer-item"><i class="bi bi-house-door-fill icono"></i></li>
+        <li class="footer-item"><i class="bi bi-ticket-perforated icono"></i></li>
+        <li class="footer-item"><i class="bi bi-bookmark-plus icono"></i></li>
+        <li class="footer-item"><i class="bi bi-person icono"></i></li>
+      </ul>
+    </footer>
+
+  </div>
+
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
